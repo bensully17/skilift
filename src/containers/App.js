@@ -26,7 +26,7 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to Ski-Lift!
+          Find Your Ride
         </Text>
         <List/>
   

@@ -5,8 +5,38 @@ const cards = [
   {
     text: 'Ben Sullivan',
     name: 'Ben',
-    image: require('./img1.png'),
+    image: require('./ListPhotos/skilyft-ben.jpg'),
+    vehicle: '2011 Range Rover Sport',
+    location: 'Denver, CO'
   },
+  {
+    text: 'Will Sheehan',
+    name: 'Will',
+    image: require('./ListPhotos/will.jpg'),
+    vehicle: 'Falcon Heavy Rocket',
+    location: 'Denver, CO'
+  },
+  {
+    text: 'Austen Elswick',
+    name: 'Austen',
+    image: require('./ListPhotos/austen.png'),
+    vehicle: 'Truck',
+    location: 'Denver, CO'
+  },
+  {
+    text: 'Adam Basila',
+    name: 'Adam',
+    image: require('./ListPhotos/Adam.png'),
+    vehicle: 'An Ostrich',
+    location: 'Denver, CO'
+  },
+  {
+    text: 'Jacob Crane',
+    name: 'Jacob',
+    image: require('./ListPhotos/jacob.png'),
+    vehicle: 'Marty McFly\'s DeLorean',
+    location: 'Denver, CO'
+  }
 ];
 export default class List extends Component {
   render() {
@@ -23,7 +53,7 @@ export default class List extends Component {
                     <Thumbnail source={item.image} />
                     <Body>
                       <Text>{item.text}</Text>
-                      <Text note>Denver, CO</Text>
+                      <Text note>{item.location}</Text>
                     </Body>
                   </Left>
                 </CardItem>
@@ -32,7 +62,7 @@ export default class List extends Component {
                 </CardItem>
                 <CardItem>
                   <Icon name="ios-car" style={{ color: '#333' }} />
-                  <Text>{item.name}</Text>
+                  <Text>{item.name}  -  Vehicle: {item.vehicle}</Text>
                 </CardItem>
               </Card>
             }
