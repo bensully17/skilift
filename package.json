@@ -12,7 +12,8 @@
     "ionicons": "^3.0.0",
     "native-base": "^2.4.2",
     "react": "16.3.1",
-    "react-native": "0.55.3"
+    "react-native": "0.55.3",
+    "react-native-navigation": "^1.1.451"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",
