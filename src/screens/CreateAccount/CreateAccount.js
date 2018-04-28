@@ -2,24 +2,22 @@ import React, { Component } from 'react';
 import { View, Text, Button, TextInput, StyleSheet, ImageBackground} from 'react-native'
 import image from '../../Assets/mountains.png'
 import startMainTabs from '../Navigation/MainTabs/startMainTabs'
-import startNewAccount from '../Navigation/StartCreateAccount/startCreateAccount'
 
-class AuthScreen extends Component {
+class CreateAccountScreen extends Component {
   loginHandler = () => {
     startMainTabs()
-  }
-  newAccountHandler = () => {
-    startNewAccount()
   }
   render () {
     return (   
       <ImageBackground source={image} style={styles.image}>
         <View style={styles.container}>
-            <Text style={styles.textHeading}>Login to SkiLyft!</Text>
-            <Button title='Create New Account' onPress={this.newAccountHandler}></Button>
+          <Text style={styles.textContainer}>
+            <Text style={styles.textHeading}>Create new Account</Text>
+          </Text>
             <View style={styles.inputContainer}>
               <TextInput placeholder='Email Address' style={styles.input} underlineColorAndroid='transparent'/>
               <TextInput placeholder='Password' style={styles.input} underlineColorAndroid='transparent'/>
+              <TextInput placeholder='Re-enter Password' style={styles.input} underlineColorAndroid='transparent'/>
             </View>
             <Button title='Submit' onPress={this.loginHandler}></Button>
         </View>
@@ -31,7 +29,7 @@ class AuthScreen extends Component {
 const styles = StyleSheet.create({
   outsideContainer: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center'
   },
   container: {
@@ -54,7 +52,13 @@ const styles = StyleSheet.create({
   textHeading: {
     fontSize: 28,
     fontWeight: 'bold',
-    paddingBottom: '30%'
+    alignItems: 'center',
+    flex: 1
+  },
+  textContainer: {
+    alignItems: 'center',
+    flexDirection: 'column'
+    
   },
   image: {
     flex: 1,
@@ -62,4 +66,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default AuthScreen
+export default CreateAccountScreen
