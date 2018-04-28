@@ -5,35 +5,35 @@ const cards = [
   {
     text: 'Ben Sullivan',
     name: 'Ben',
-    image: require('./ListPhotos/skilyft-ben.jpg'),
+    image: require('../../Assets/ListPhotos/skilyft-ben.jpg'),
     vehicle: '2011 Range Rover Sport',
     location: 'Denver, CO'
   },
   {
     text: 'Will Sheehan',
     name: 'Will',
-    image: require('./ListPhotos/will.jpg'),
+    image: require('../../Assets/ListPhotos/will.jpg'),
     vehicle: 'Falcon Heavy Rocket',
     location: 'Denver, CO'
   },
   {
     text: 'Austen Elswick',
     name: 'Austen',
-    image: require('./ListPhotos/austen.png'),
+    image: require('../../Assets/ListPhotos/austen.png'),
     vehicle: 'Truck',
     location: 'Denver, CO'
   },
   {
     text: 'Adam Basila',
     name: 'Adam',
-    image: require('./ListPhotos/Adam.png'),
+    image: require('../../Assets/ListPhotos/Adam.png'),
     vehicle: 'An Ostrich',
     location: 'Denver, CO'
   },
   {
     text: 'Jacob Crane',
     name: 'Jacob',
-    image: require('./ListPhotos/jacob.png'),
+    image: require('../../Assets/ListPhotos/jacob.png'),
     vehicle: 'Marty McFly\'s DeLorean',
     location: 'Denver, CO'
   }

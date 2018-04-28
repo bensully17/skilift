@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Button, TextInput, StyleSheet, ImageBackground} from 'react-native'
 import image from '../../Assets/mountains.png'
+import startMainTabs from '../MainTabs/startMainTabs'
 
 class AuthScreen extends Component {
   loginHandler = () => {
