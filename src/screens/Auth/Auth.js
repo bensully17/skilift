@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text, Button, TextInput, StyleSheet, ImageBackground} from 'react-native'
 import image from '../../Assets/mountains.png'
-import startMainTabs from '../Navigation/MainTabs/startMainTabs'
+import startDatePicker from '../Navigation/DatePickerIOS/DatePicker'
 import startNewAccount from '../Navigation/StartCreateAccount/startCreateAccount'
 
 class AuthScreen extends Component {
   loginHandler = () => {
-    startMainTabs()
+    startDatePicker()
   }
   newAccountHandler = () => {
     startNewAccount()
