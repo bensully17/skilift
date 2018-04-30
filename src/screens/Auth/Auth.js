@@ -18,7 +18,7 @@ class AuthScreen extends Component {
             <Text style={styles.textHeading}>Login to SkiLyft!</Text>
             <Button title='Create New Account' onPress={this.newAccountHandler}></Button>
             <View style={styles.inputContainer}>
-              <TextInput placeholder='Email Address' style={styles.input} underlineColorAndroid='transparent'/>
+              <TextInput placeholder='Username' style={styles.input} underlineColorAndroid='transparent'/>
               <TextInput placeholder='Password' style={styles.input} underlineColorAndroid='transparent'/>
             </View>
             <Button title='Submit' onPress={this.loginHandler}></Button>

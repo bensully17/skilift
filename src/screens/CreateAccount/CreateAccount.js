@@ -15,9 +15,8 @@ class CreateAccountScreen extends Component {
             <Text style={styles.textHeading}>Create new Account</Text>
           </Text>
             <View style={styles.inputContainer}>
-              <TextInput placeholder='Email Address' style={styles.input} underlineColorAndroid='transparent'/>
+              <TextInput placeholder='Username' style={styles.input} underlineColorAndroid='transparent'/>
               <TextInput placeholder='Password' style={styles.input} underlineColorAndroid='transparent'/>
-              <TextInput placeholder='Re-enter Password' style={styles.input} underlineColorAndroid='transparent'/>
             </View>
             <Button title='Submit' onPress={this.loginHandler}></Button>
         </View>
