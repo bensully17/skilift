@@ -9,7 +9,8 @@ class CreateAccountScreen extends Component {
   }
   returnHandler = () => {
     this.props.navigator.push({
-      screen: 'skilyft.AuthScreen'
+      screen: 'skilyft.AuthScreen',
+      animationType: 'fade',
     })
   }
   render () {

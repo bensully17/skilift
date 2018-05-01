@@ -9,7 +9,11 @@ class AuthScreen extends Component {
     startDatePicker()
   }
   newAccountHandler = () => {
-    startNewAccount()
+    this.props.navigator.push({
+      screen: 'skilyft.CreateAccountScreen',
+      animationType: 'fade',
+      backButtonHidden: false
+    })
   }
   render () {
     return (   
