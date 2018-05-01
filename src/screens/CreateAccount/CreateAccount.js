@@ -11,6 +11,7 @@ class CreateAccountScreen extends Component {
     this.props.navigator.push({
       screen: 'skilyft.AuthScreen',
       animationType: 'fade',
+      backButtonHidden: true
     })
   }
   render () {

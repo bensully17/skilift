@@ -6,13 +6,17 @@ import startNewAccount from '../Navigation/StartCreateAccount/startCreateAccount
 
 class AuthScreen extends Component {
   loginHandler = () => {
-    startDatePicker()
-  }
+    this.props.navigator.push({
+      screen: 'skilyft.PlanTripIOS',
+      backButtonHidden: false,
+      backButtonTitle: 'Login'
+    })  }
   newAccountHandler = () => {
     this.props.navigator.push({
       screen: 'skilyft.CreateAccountScreen',
       animationType: 'fade',
-      backButtonHidden: false
+      backButtonHidden: false,
+      backButtonTitle: 'Login'
     })
   }
   render () {
