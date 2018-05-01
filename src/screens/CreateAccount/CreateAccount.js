@@ -7,18 +7,22 @@ class CreateAccountScreen extends Component {
   loginHandler = () => {
     startMainTabs()
   }
+  returnHandler = () => {
+    this.props.navigator.push({
+      screen: 'skilyft.AuthScreen'
+    })
+  }
   render () {
     return (   
       <ImageBackground source={image} style={styles.image}>
         <View style={styles.container}>
-          <Text style={styles.textContainer}>
-            <Text style={styles.textHeading}>Create new Account</Text>
-          </Text>
-            <View style={styles.inputContainer}>
-              <TextInput placeholder='Username' style={styles.input} underlineColorAndroid='transparent'/>
-              <TextInput placeholder='Password' style={styles.input} underlineColorAndroid='transparent'/>
-            </View>
-            <Button title='Submit' onPress={this.loginHandler}></Button>
+          <Text style={styles.textHeading}>Create new Account</Text>
+          <Button title='Return to Login' onPress={this.returnHandler}></Button>
+          <View style={styles.inputContainer}>
+            <TextInput placeholder='Username' style={styles.input} underlineColorAndroid='transparent'/>
+            <TextInput placeholder='Password' style={styles.input} secureTextEntry underlineColorAndroid='transparent'/>
+          </View>
+          <Button title='Submit' onPress={this.loginHandler}></Button>
         </View>
       </ImageBackground> 
     )
@@ -51,13 +55,7 @@ const styles = StyleSheet.create({
   textHeading: {
     fontSize: 28,
     fontWeight: 'bold',
-    alignItems: 'center',
-    flex: 1
-  },
-  textContainer: {
-    alignItems: 'center',
-    flexDirection: 'column'
-    
+    paddingBottom: '30%'
   },
   image: {
     flex: 1,

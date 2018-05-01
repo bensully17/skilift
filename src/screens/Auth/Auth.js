@@ -19,7 +19,7 @@ class AuthScreen extends Component {
             <Button title='Create New Account' onPress={this.newAccountHandler}></Button>
             <View style={styles.inputContainer}>
               <TextInput placeholder='Username' style={styles.input} underlineColorAndroid='transparent'/>
-              <TextInput placeholder='Password' secureTextEntry='true' style={styles.input} underlineColorAndroid='transparent'/>
+              <TextInput placeholder='Password' secureTextEntry style={styles.input} underlineColorAndroid='transparent'/>
             </View>
             <Button title='Submit' onPress={this.loginHandler}></Button>
         </View>
